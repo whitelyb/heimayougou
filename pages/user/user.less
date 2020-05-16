@@ -1,0 +1,110 @@
+page {
+  background-color: #edece8;
+}
+.user_info_wrap {
+  height: 45vh;
+  overflow: hidden;
+  position: relative;
+  .user_img_wrap {
+    position: relative;
+    .user_bg {
+      height: 50vh;
+      // 高斯模糊
+      filter: blur(10rpx);
+    }
+    .user_info {
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translateX(-50%);
+      text-align: center;
+      .user_icon {
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+      }
+      .user_name {
+        color: #fff;
+        margin-top: 40rpx;
+        font-size: 35rpx;
+      }
+    }
+  }
+  .login_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    font-size: 38rpx;
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.user_content {
+  position: relative;
+  .user_main {
+    padding-bottom: 80rpx;
+    color: #666;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40rpx;
+    .history_wrap {
+      background-color: #fff;
+      display: flex;
+      navigator {
+        flex: 1;
+        text-align: center;
+        padding: 10rpx 0;
+        .his_num {
+          color: var(--themeColor);
+        }
+      }
+    }
+    .orders_wrap {
+      background-color: #fff;
+      margin-top: 30rpx;
+      .orders_title {
+        padding: 20rpx;
+        border-bottom: 1px solid #ccc;
+      }
+      .orders_conten {
+        display: flex;
+        navigator {
+          flex: 1;
+          text-align: center;
+          padding: 15rpx 0;
+          .iconfont {
+            color: var(--themeColor);
+            font-size: 40rpx;
+          }
+        }
+      }
+    }
+    .address_wrap {
+      margin-top: 25rpx;
+      background-color: #fff;
+      padding: 24rpx;
+    }
+    .app_info_wrap {
+      margin-top: 25rpx;
+      background-color: #fff;
+      .app_info_item {
+        padding: 24rpx;
+        border-bottom: 1px solid #ccc;
+      }
+      .app_info_contact {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .recommend_wrap {
+      margin-top: 25rpx;
+      background-color: #fff;
+      padding: 24rpx;
+    }
+  }
+}
